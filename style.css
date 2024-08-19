@@ -133,3 +133,139 @@ a {
 .item {
     color: red;
 }
+
+.combo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:aquamarine;
+    text-align: center;
+    font-size: 25px;
+    font-style: oblique;
+    margin-top: 30px;
+    
+}
+
+/* ESTILOS PARA FORMULARIO DE ACA EN ADELANTE */
+.formula {
+    font-family: Arial, sans-serif; /* Fuente utilizada en el documento */
+    background-color: #a35050; /* Color de fondo de la página */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 20px; /* Añade espacio interno alrededor del contenido */
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 50px; /* Espacio interno en el formulario */
+    border-radius: 5px; /* Esquinas redondeadas en el formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del formulario */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: auto; /* Centra el formulario en la página */
+}
+
+/* Estilo de las etiquetas del formulario */
+label {
+    display: block; /* Cada etiqueta ocupa una línea completa */
+    margin-bottom: 5px; /* Espacio debajo de cada etiqueta */
+}
+
+/* Estilo de los campos de entrada y área de texto */
+input, textarea {
+    width: 100%; /* Campos ocupan todo el ancho disponible */
+    padding: 10px; /* Espacio interno en los campos */
+    margin-bottom: 10px; /* Espacio debajo de cada campo */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 3px; /* Esquinas redondeadas en los campos */
+}
+
+/* Estilo del botón de envío */
+button {
+    padding: 10px 20px; /* Espacio interno en el botón */
+    background-color: #5cb85c; /* Color de fondo del botón */
+    color: white; /* Color del texto en el botón */
+    border: none; /* Sin borde en el botón */
+    border-radius: 3px; /* Esquinas redondeadas en el botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+}
+
+/* Cambia el color del botón cuando se pasa sobre él */
+button:hover {
+    background-color: #4cae4c; /* Color de fondo más oscuro cuando se pasa sobre el botón */
+}
+
+/* Estilo del botón de restablecer (borrar) */
+button[type="reset"] {
+    padding: 10px 20px; /* Espacio interno en el botón */
+    background-color: #d9534f; /* Color de fondo rojo */
+    color: white; /* Color del texto en el botón */
+    border: none; /* Sin borde en el botón */
+    border-radius: 3px; /* Esquinas redondeadas en el botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    margin-left: 10px; /* Espacio a la izquierda del botón */
+}
+
+/* Cambia el color del botón cuando se pasa sobre él */
+button[type="reset"]:hover {
+    background-color: #c9302c; /* Color de fondo más oscuro cuando se pasa sobre el botón */
+}
+
+/* FIN ESTILOS DEL FORMULARIO */
+
+
+/* INCIO DE LOS ESTILOS DE CARUSEL */
+/* Reset CSS */
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .carrux {
+    /* font-family: Arial, sans-serif; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #a36363;
+  }
+  
+  .base-carru {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a36363;
+    
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .carousel {
+    display: flex;
+    animation: slide 60s infinite;
+  }
+
+  .slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
+  }
+ 

@@ -38,47 +38,35 @@
 
             </nav>
         </header>
-        <section>
-            <h1 class="hard">CONTACTO</h1>
-            <h2  class="titi">¿Quienes somos?</h2>
-            <p class="parra">
-                Somos una empresa independiente en ascenso, hardware venta no solo se especialisa en la venta sino tambien:
-            
-            </p>
-            <ul class="item">instalacion de software</ul>
-            <ul class="item"> mantenimiento de equipo</ul>
-            <ul class="item">instalacion del equipo</ul>
-            <ul class="item">limpieza de equipo</ul>
-            <ul class="item">instalacion de antivirus</ul>
-            <h2  class="titi">Contactanos:</h2>
-            <p class="parra">Contactanos en instagram como
-                <a class="ig" href="https://www.instagram.com/hardwareventa/">hardware_venta</a>
-            </p>
-    <h2 class="titi">Mandanos tus problemas a resolver</h2>
-            <form>
-                <label for="nombre" class="parra">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"><br><br>
-                <label for="email" class="parra">Correo electrónico:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="mensaje" class="parra">Problemas a resolver:</label>
-                <textarea id="mensaje" name="mensaje"></textarea><br><br>
-                <input type="submit" value="Enviar">
-                <button>
-                    <a href="index.html">Volver</a>
-                    </button>
-                    <button>
-                        <a href="productos.html">Ir a productos</a>
-                       
-                        
+        
+<!-- Encabezado principal del formulario -->
+<h1>Formulario de Contacto</h1> 
 
-                
-                    
-                    </button>
-                    <p class="parra">Todas las dudas las contestara nuestro secretario Geronimo Benavides</p>
-    
-                
-            </form>
-        </section>
+<!-- Inicia el formulario -->
+<!-- 'id' se utiliza para identificar el formulario en el DOM, 'action' especifica la URL a la que se enviarán los datos, 'method' define el método HTTP (POST en este caso) -->
+ <section class="formula">
+<form id="contactForm" action="/submit_form" method="POST">
+
+    <!-- Etiqueta y campo de entrada para el nombre -->
+    <label for="name">Nombre:</label> <!-- 'for' se enlaza con el 'id' del input correspondiente -->
+    <input type="text" id="name" name="name" required> <!-- 'type' define el tipo de campo, 'id' y 'name' son usados para identificar y procesar los datos, 'required' hace que el campo sea obligatorio -->
+    <br><br> <!-- Saltos de línea para espaciar los elementos -->
+
+    <!-- Etiqueta y campo de entrada para el correo electrónico -->
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required> <!-- 'type="email"' asegura que el formato del correo sea válido -->
+    <br><br>
+
+    <!-- Etiqueta y área de texto para el mensaje -->
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" required></textarea> <!-- 'textarea' es para textos largos; 'id' y 'name' ayudan a identificar y procesar este campo -->
+    <br><br>
+
+    <!-- Botón para enviar el formulario -->
+    <button type="submit">Enviar</button> <!-- 'type="submit"' hace que el botón envíe el formulario cuando es presionado -->
+    <button type="reset">Borrar</button>
+</form> <!-- Fin del formulario -->
+</section>
 
 
 
