@@ -376,3 +376,8 @@ button[type="reset"]:hover {
 }
   */
 /* fin de los estilos del carru */
+
+.contenedor {
+    text-align: center;
+    margin-top: 20px;
+}
