@@ -29,22 +29,36 @@
             </a>
         </nav>
     </header>
+    <br>
     <section class="carrux">
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="slide"><img src="./imagenes/carru4.png" alt=""></div>
-                <div class="slide"><img src="./imagenes/carru5.png" alt=""></div>
-                <div class="slide"><img src="./imagenes/tito.png" alt=""></div>
-                <div class="slide"><img src="./imagenes/carru3.png" alt=""></div>
-                <div class="slide"><img src="./imagenes/carru4.png" alt=""></div>
-                <div class="slide"><img src="./imagenes/carru5.png" alt=""></div>
-                <div class="slide"><img src="./imagenes/tito.png" alt=""></div>
-                <div class="slide"><img src="./imagenes/carru3.png" alt=""></div>
+          <!-- Contenedor principal del carrusel -->
+    <div class="carousel-container">
+        <!-- Contenedor que envuelve los elementos del carrusel -->
+        <div class="carousel">
+            <!-- Primer elemento del carrusel -->
+            <div class="carousel-item">
+                <img src="./imagenes/anuncio5.png" alt="Imagen 1"> <!-- Imagen dentro del primer elemento -->
             </div>
-
+            <!-- Segundo elemento del carrusel -->
+            <div class="carousel-item">
+                <img src="./imagenes/anuncio3.png" alt="Imagen 2"> <!-- Imagen dentro del segundo elemento -->
+            </div>
+            <!-- Tercer elemento del carrusel -->
+            <div class="carousel-item">
+                <img src="./imagenes/anuncio4.png" alt="Imagen 3"> <!-- Imagen dentro del tercer elemento -->
+            </div>
         </div>
+        <!-- Flecha izquierda para desplazarse hacia atrás -->
+        <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <!-- Flecha derecha para desplazarse hacia adelante -->
+        <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
     </section>
-    <section>
+    <br>
+    <section class="videito"> 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/heB3lkMdmfU?si=JZD59la52_yemDaf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 

@@ -236,148 +236,81 @@ button[type="reset"]:hover {
 /* FIN ESTILOS DEL FORMULARIO */
 
 
-/* INCIO DE LOS ESTILOS DE CARUSEL */
-/* Reset CSS */
-* {
-    margin:  0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-  .carrux {
-    /* font-family: Arial, sans-serif; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    background-color: #a36363;
-  }
-  
-  .base-carru {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #a36363;
-    
-  }
-  
-  .carousel-container {
-    overflow: hidden;
-    width: 80%;
-    max-width: 1000px;
-  }
-  
-  .carousel {
-    display: flex;
-    animation: slide 60s infinite;
-  }
 
-  .slide {
-    min-width: 100%;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 300px;
-  }
-  
-  @keyframes slide {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
-    100% { transform: translateX(-400%); }
-  }
 
-/* .tex {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    background-color: #a36363;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0)
+
+
+/* Estilos del contenedor principal del carrusel con boton */
+.carousel-container {
+    position: relative; /* Posiciona elementos relativamente a este contenedor */
+    width: 100%; /* El ancho es el 100% del contenedor padre */
+    height: 500px; /* El alto es el 100% de la altura de la */
+    max-width: 650px;  /* Ancho máximo del carrusel */ 
+    overflow: hidden; /* Oculta contenido que desborda el contenedor */
+    margin: auto; /* Centra el carrusel horizontalmente */
 }
-  *//* 
-  * INCIO DE LOS ESTILOS DE CARUSEL de los pibes */ */
-/* Reset CSS */
-* {
-    margin:  0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-  .carrux2 {
-    /* font-family: Arial, sans-serif; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-  }
-  
-  .base-carru2 {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #a36363;
-    border-radius: 10px;
-
-
-
-    
-    
-  }
-  
-  .carousel-container2 {
-    overflow: hidden;
-    width: 100%;
-    max-width: 100px;
-  }
-  
-  .carousel2 {
-    display: flex;
-    animation: slide 60s infinite;
-  }
-
-  .slide2 {
-    min-width: 100%;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide image  {
-    width: 100%;
-    height: 100px;
-  }
-  
-  @keyframes slide {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
-    100% { transform: translateX(-400%); }
-  }
-
-/* .tex {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    background-color: #a36363;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0)
+/* Estilos del contenedor que envuelve los elementos del carrusel */
+.carousel {
+    display: flex; /* Dispone los elementos en una fila horizontal */
+    transition: transform 0.5s ease-in-out; /* Anima el movimiento del carrusel */
 }
-  */
-/* fin de los estilos del carru */
 
-.contenedor {
-    text-align: center;
-    margin-top: 20px;
+/* Estilos de cada elemento del carrusel */
+.carousel-item {
+    min-width: 100%; /* Cada elemento ocupa el 100% del contenedor padre */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilos para las imágenes dentro de cada elemento del carrusel */
+.carousel-item img {
+    width: 100%; /* Las imágenes ocupan el 100% del ancho del elemento */
+    height: auto; /* Mantiene la proporción de la imagen */
+    
+}
+
+/* Estilos para los botones de control del carrusel */
+.carousel-control {
+    position: absolute; /* Posiciona los botones respecto al contenedor padre */
+    top: 50%; /* Centra los botones verticalmente */
+    transform: translateY(-50%); /* Ajusta la posición para centrar exactamente */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los botones */
+    color: white; /* Color del texto (flecha) */
+    border: none; /* Sin bordes */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+    z-index: 1000; /* Asegura que los botones se superpongan al contenido del carrusel */
+}
+
+/* Estilos específicos para el botón de la izquierda */
+.carousel-control.prev {
+    left: 10px; /* Posiciona el botón a 10px del borde izquierdo */
+}
+
+/* Estilos específicos para el botón de la derecha */
+.carousel-control.next {
+    right: 10px; /* Posiciona el botón a 10px del borde derecho */
+}
+.carrux {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    margin: auto;
+    background-color: #f0f0f0;
+    border: solid black 5px;
+}
+/* fin de los estilos del carousel con boton */
+
+.videito {
+display: flex;
+justify-content: center;
+margin: 10px;
+
+
+}
+
+.videito iframe {
+    border: solid black 5px;
 }
