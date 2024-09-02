@@ -1,0 +1,2 @@
+(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[37237],{70295:(s,e,_)=>{var a=_(16270);const c=_(96540),{string:l}=_(5556),o=_(46942),{Image:r}=_(50162),t=s=>{let{className:e}=s;return a(r,{src:"cockade.svg",alt:"",className:o("ui-pdp-icon",e)})};t.defaultProps={className:null},s.exports=c.memo(t),s.exports.ICON_ID="cockade"}}]);
+//# sourceMappingURL=cockade.04973559.js.map
