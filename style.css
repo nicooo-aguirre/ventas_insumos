@@ -6,7 +6,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(74, 30, 233);
+    /* background-color: rgb(74, 30, 233); */
+    background: linear-gradient(to bottom right, blue, pink);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -25,11 +26,13 @@ body {
     justify-content: space-between;
     align-items: center;
     /* text-decoration: none; */
+    
 }
 
-nav {
+
+/* nav {
     padding-right: 350px;
-}
+} */
 
 li {
     list-style: none;
@@ -166,6 +169,16 @@ a {
     font-size: 25px;
     font-style: oblique;
     margin-top: 30px;
+    
+}
+
+.combo1 img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px;
+    
+
     
 }
 
@@ -314,3 +327,12 @@ margin: 10px;
 .videito iframe {
     border: solid black 5px;
 }
+.centrado {
+    text-align: center;
+    color: aliceblue;
+}
+.logodeig {
+    width: 5px;
+    height: 5px;
+}
+
